@@ -2,7 +2,10 @@
 
 syntax "HTML" "\.html?(.j2)?$"
 magic "HTML document"
-comment "<!--|-->"
+
+# Does not work
+#comment "<!--|-->"
+color magenta start="<!--" end="-->"
 
 ## Emphasis tags
 color brightwhite start="<([biu]|em|strong)[^>]*>" end="</([biu]|em|strong)>"
